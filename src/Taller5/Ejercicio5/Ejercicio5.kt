@@ -1,9 +1,9 @@
 package Taller5.Ejercicio5
 
-class Avion{
-    private var costoClase1 = 500_000
-    private var costoClase2 = 200_000
-    private var costoClase3 = 125_000
+class avion{
+    private var costoClase1 = 0
+    private var costoClase2 = 0
+    private var costoClase3 = 0
 
     constructor(costoClase1: Int,costoClase2: Int,costoClase3: Int){
         this.costoClase1 = costoClase1
