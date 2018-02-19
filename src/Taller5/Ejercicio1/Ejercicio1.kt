@@ -3,6 +3,10 @@ package Taller5.Ejercicio1
 import java.awt.Dimension
 import kotlin.math.roundToInt
 
+/**
+ * Creacion de la clase piramide, posee 3 atributos
+ *  - Dimension
+ */
 class piramide{
     private var dimensionb: Double = 0.0
     private var dimensionB: Double = 0.0
