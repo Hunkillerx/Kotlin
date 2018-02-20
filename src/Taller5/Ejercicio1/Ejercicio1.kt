@@ -5,11 +5,7 @@ import kotlin.math.roundToInt
 
 /**
  * Clase piramide, posee 3 atributos
- *   @param dimensionb : Double
- *   @param dimensionB : Double
- *   @param h : Double
- *   @author Jose Diaz
- *
+ * @author Jose Diaz
  */
 class piramide{
     private var dimensionb: Double = 0.0
@@ -18,6 +14,9 @@ class piramide{
 
     /**
      * Metodo constructor de la clase piramide
+     *  @param dimensionb : Dimension del lado del cuadrado superior
+     *  @param dimensionB : Dimension del lado del cuadrado inferior
+     *  @param h : Altura del tronco
      */
     constructor(dimensionb:Double, dimensionB: Double, h:Double){
         this.dimensionb = dimensionb
@@ -29,7 +28,7 @@ class piramide{
 
     /**
      * Metodo analizador que retorna la dimension b de la piramide
-     * @return dimensionb:Double
+     * @return dimensionb: Dimension del lado del cuadrado superior
      */
     fun darDimensionb():Double{
         return dimensionb
@@ -37,7 +36,7 @@ class piramide{
 
     /**
      * Metodo analizador que retorna la dimension B de la piramide
-     * @return dimensionB:Double
+     * @return dimensionB: Dimension del lado del cuadrado inferior
      */
     fun darDimensionB():Double{
         return dimensionB
@@ -45,7 +44,7 @@ class piramide{
 
     /**
      * Metodo analizador que retorna la altura de la piramide
-     * @return h:Double
+     * @return h: Altura del tronco
      */
     fun darAltura():Double{
         return h
@@ -54,7 +53,7 @@ class piramide{
     /**
      * Metodo analizador que retorna el area de la piramide utlizando
      * las dimensiones generales de la piramide
-     * @return area:Double
+     * @return area: Area de la piramide
      */
     fun areaPiramide():Double{
         var promedio = (dimensionb * dimensionB) / 2
@@ -65,6 +64,7 @@ class piramide{
     /**
      * Metodo analizador que retonral el volumen de la piramide utilizando
      * las dimensiones generales de la piramide
+     * @return volumen de la piramide
      */
     fun Volumen():Double {
         var s1 = dimensionB * dimensionB

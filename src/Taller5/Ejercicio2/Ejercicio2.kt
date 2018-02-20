@@ -4,8 +4,6 @@ import kotlin.math.roundToInt
 
 /**
  * Clase viajeCamion que se utiliza para determinar costos y recorrido del camion en viajes de mercancia
- * @param numKilosCapacidad : Double
- * @param galonKm : Double
  * @author Jose Diaz
  */
 class viajeCamion {
@@ -14,6 +12,8 @@ class viajeCamion {
 
     /**
      * Metodo constructor de la clase viajeCamion
+     * @param numKilosCapacidad : Capacidad total del camion en kilos
+     * @param galonKm : Galones consumidos por un kilometro de recorrido
      */
     constructor(numKilosCapacidad: Double, galonKm: Double) {
         this.numKilosCapacidad = numKilosCapacidad
@@ -24,7 +24,7 @@ class viajeCamion {
 
     /**
      *Metodo analizador que retorna la capacidad del camion en kilos
-     * @return numKilosCapacidad:Double
+     * @return numKilosCapacidad: Capacidad total del camion en kilos
      */
     fun darCapacidad(): Double {
         return numKilosCapacidad
@@ -33,7 +33,7 @@ class viajeCamion {
     /**
      * Metodo analizador que retorna la cantidad de galones que consume
      * el camion en 1 kilometro
-     * @return galonKm:Double
+     * @return galonKm: cantidad de galones consumidos por kilometros
      */
     fun darGalonKm(): Double {
         return galonKm
@@ -44,11 +44,12 @@ class viajeCamion {
      * completar el viaje asi como los galones necesarios para toda la
      * cantidad de viajes necesarios
      *
-     * @param kmsViaje:Double
-     * @param cantidadCarga: Double
+     * @param kmsViaje: Kilometros hasta el destino del viaje
+     * @param cantidadCarga: Cantidad de carga total por transportar
      *
-     * @return numViajes: Int
-     * @return galonesPorViaje: Double
+     * @return numViajes: Numero de viajes necesarios para entregar el total de carga
+     * @return galonesPorViaje: Galones de gasolina necesarios para completar la
+     * cantidad de viajes necesarios
      */
     fun numViajesGalones(kmsViaje: Double, cantidadCarga: Double): Pair<Int, Double> {
         var numViajes = cantidadCarga / numKilosCapacidad
